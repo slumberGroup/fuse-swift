@@ -225,7 +225,7 @@ public class Fuse {
             
             // Initialize the bit array
             var bitArr = [Int](repeating: 0, count: finish + 2)
-            bitArr[finish + 1] = (1 << i) - 1
+            bitArr[finish + 1] = (1 << i) &- 1
             
             if start > finish {
                 continue
